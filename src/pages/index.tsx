@@ -5,7 +5,6 @@ import styles from "@/styles/Home.module.css";
 import 'bootstrap/dist/css/bootstrap.css';
 import Hbo_nav from "@/components/molecules/navbar";
 import Carousel from "@/components/molecules/Carousel";
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 
 const geistSans = Geist({
@@ -19,10 +18,12 @@ const geistMono = Geist_Mono({
 });
 
 export default function Home() {
+
   return (
+    
     <>
-      <Hbo_nav />
-      <Carousel />
+      <Hbo_nav/>
+      <Carousel/>
     </>
 
   );

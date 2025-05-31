@@ -1,20 +1,21 @@
 import React from 'react';
+import image1 from '../../images/image(1).png';
 
 export default function Carousel() {
     return (
         <div id="carouselExampleCaptions" className="carousel slide">
             <div className="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"/>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"/>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"/>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 2"/>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 2"/>
-           
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1" />
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2" />
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3" />
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4" />
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5" />
             </div>
             <div className="carousel-inner">
+            
                 <div className="carousel-item active">
                     <img
-                        src="path/to/first-image.jpg"
+                        src="../../images/image(1).png"
                         className="d-block w-100"
                         alt="First slide"
                     />
@@ -23,6 +24,7 @@ export default function Carousel() {
                         <p>Some representative placeholder content for the first slide.</p>
                     </div>
                 </div>
+
                 <div className="carousel-item">
                     <img
                         src="path/to/second-image.jpg"
@@ -42,6 +44,28 @@ export default function Carousel() {
                     />
                     <div className="carousel-caption d-none d-md-block">
                         <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+                <div className="carousel-item">
+                    <img
+                        src="path/to/third-image.jpg"
+                        className="d-block w-100"
+                        alt="Third slide"
+                    />
+                    <div className="carousel-caption d-none d-md-block">
+                        <h5>4 slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+                <div className="carousel-item">
+                    <img
+                        src="path/to/third-image.jpg"
+                        className="d-block w-100"
+                        alt="Third slide"
+                    />
+                    <div className="carousel-caption d-none d-md-block">
+                        <h5>5 slide label</h5>
                         <p>Some representative placeholder content for the third slide.</p>
                     </div>
                 </div>

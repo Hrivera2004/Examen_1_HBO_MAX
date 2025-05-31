@@ -7,11 +7,11 @@ const Hbo_nav = () => {
                 <img src="https://images.cdn.prd.api.discomax.com/05b7/3d4a7e2b0215.png?h=60&f=webp" width="109.5" height="30" />
             </a>
             <div  style={{flex: 1,display: 'flex',flexDirection: 'row',justifyContent: 'center',alignItems: 'center',gap: '1%',}}>
-                <p className="center_vert">Inicio</p>
-                <p className="center_vert" >Series</p>
-                <p className="center_vert" >Peliculas</p>
-                <img src="https://images.cdn.prd.api.discomax.com/15f1/f2fde30cf1b2.png?h=48&f=webp" width="33" height="30"/>
-                <p className="center_vert" >Niños y familias</p>
+                <a href="#"><p className="center_vert">Inicio</p> </a>
+                <a href="#"><p className="center_vert" >Series</p></a>
+                <a href="#"><p className="center_vert" >Peliculas</p></a>
+                <a href="#"><img src="https://images.cdn.prd.api.discomax.com/15f1/f2fde30cf1b2.png?h=48&f=webp" width="33" height="30"/></a>
+                <a href="#"><p className="center_vert" >Niños y familias</p></a>
             </div>
 
             <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
