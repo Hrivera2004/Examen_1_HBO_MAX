@@ -20,9 +20,8 @@ const geistMono = Geist_Mono({
 export default function Home() {
 
   return (
-    
     <>
-      <Hbo_nav/>
+
       <Carousel/>
     </>
 

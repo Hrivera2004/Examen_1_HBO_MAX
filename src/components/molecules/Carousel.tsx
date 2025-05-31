@@ -1,5 +1,7 @@
 import React from 'react';
-import image1 from '../../images/image(1).png';
+import Hbo_nav from './navbar';
+import { C_item } from '../atoms/Carousel_item_mine';
+
 
 export default function Carousel() {
     return (
@@ -10,81 +12,28 @@ export default function Carousel() {
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3" />
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4" />
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5" />
-            </div>
-            <div className="carousel-inner">
-            
-                <div className="carousel-item active">
-                    <img
-                        src="../../images/image(1).png"
-                        className="d-block w-100"
-                        alt="First slide"
-                    />
-                    <div className="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
-                    </div>
-                </div>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6" />
 
-                <div className="carousel-item">
-                    <img
-                        src="path/to/second-image.jpg"
-                        className="d-block w-100"
-                        alt="Second slide"
-                    />
-                    <div className="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
-                    </div>
-                </div>
-                <div className="carousel-item">
-                    <img
-                        src="path/to/third-image.jpg"
-                        className="d-block w-100"
-                        alt="Third slide"
-                    />
-                    <div className="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
-                    </div>
-                </div>
-                <div className="carousel-item">
-                    <img
-                        src="path/to/third-image.jpg"
-                        className="d-block w-100"
-                        alt="Third slide"
-                    />
-                    <div className="carousel-caption d-none d-md-block">
-                        <h5>4 slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
-                    </div>
-                </div>
-                <div className="carousel-item">
-                    <img
-                        src="path/to/third-image.jpg"
-                        className="d-block w-100"
-                        alt="Third slide"
-                    />
-                    <div className="carousel-caption d-none d-md-block">
-                        <h5>5 slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
-                    </div>
+            </div>
+            <Hbo_nav />
+            <div className="d-flex justify-content-center">
+                <div className="carousel-inner">
+                    {/*item1*/}
+                    <C_item active={true} Link_image={"https://4kwallpapers.com/images/walls/thumbs_3t/22621.jpg"} new_or_not={true} age_restriction={"12+"} title={"da"} description="da" tipo_contenido='serie' Num_temporadas={2} />
+                    {/*item2*/}
+                    {/*item3*/}
+                    {/*item4*/}
+                    {/*item5*/}
+                    {/*item6*/}
                 </div>
             </div>
-            <button
-                className="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="prev"
-            >
+
+            {/*Controles*/}
+            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                 <span className="carousel-control-prev-icon" aria-hidden="true" />
                 <span className="visually-hidden">Previous</span>
             </button>
-            <button
-                className="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="next"
-            >
+            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
                 <span className="carousel-control-next-icon" aria-hidden="true" />
                 <span className="visually-hidden">Next</span>
             </button>

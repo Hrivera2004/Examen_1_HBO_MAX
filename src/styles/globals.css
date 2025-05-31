@@ -1,6 +1,6 @@
 :root {
-  --background: #000000;
-  --foreground: #ffffff;
+  --background: #ffffff;
+  --foreground: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -52,7 +52,23 @@ a {
 
 .center_vert {
   font-family: 'Daytona W04 Condensed Fat';
-    margin: 0;
+    margin: 0%;
     display: flex;
     align-items: center;
+}
+
+.bordered_text_carousel_style{
+  border: 2px solid #ffffff;     
+  border-radius: 8px;          
+  padding: 0px 1%;           
+  font-weight: bold;          
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.5);     
+}
+.Subtitle_carousel_style{
+  font-size: x-small;
+}
+.boton_carousel_style{
+ border-radius: 10%;
+
 }

@@ -1,12 +1,14 @@
 import React from "react";
 //
 const Hbo_nav = () => {
-    return <nav className="navbar-expand-lg bg-transparent" style={{ paddingLeft: '4%', paddingTop: '1.5%', display: 'flex', alignItems: 'center' }}>
+    return <nav className="navbar-expand-lg bg-transparent" style={{ paddingLeft: '4%', paddingTop: '1.5%', paddingBottom:'1%', display: 'flex', alignItems: 'center' }}>
         <div className="container-fluid " style={{ display: 'flex', alignItems: 'center', width: '100%' }} >
             <a className="navbar-brand " style={{ flex: '0 0 auto' }}>
                 <img src="https://images.cdn.prd.api.discomax.com/05b7/3d4a7e2b0215.png?h=60&f=webp" width="109.5" height="30" />
             </a>
-            <div  style={{flex: 1,display: 'flex',flexDirection: 'row',justifyContent: 'center',alignItems: 'center',gap: '1%',}}>
+
+    
+            <div style={{flex: 1,display: 'flex',flexDirection: 'row',justifyContent: 'center',alignItems: 'center',gap: '1%',}} >
                 <a href="#"><p className="center_vert">Inicio</p> </a>
                 <a href="#"><p className="center_vert" >Series</p></a>
                 <a href="#"><p className="center_vert" >Peliculas</p></a>
