@@ -5,7 +5,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #000000;
     --foreground: #ededed;
   }
 }
@@ -15,11 +15,20 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
 }
+@font-face {
+    font-family: "Daytona W04 Condensed Fat";
+    src: url("https://db.onlinewebfonts.com/t/01fdd2f22c978d651d7c4def257ac592.eot");
+    src: url("https://db.onlinewebfonts.com/t/01fdd2f22c978d651d7c4def257ac592.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/01fdd2f22c978d651d7c4def257ac592.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/01fdd2f22c978d651d7c4def257ac592.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/01fdd2f22c978d651d7c4def257ac592.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/01fdd2f22c978d651d7c4def257ac592.svg#Daytona W04 Condensed Fat")format("svg");
+}
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:'Courier New', Courier, monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -39,4 +48,11 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+.center_vert {
+  font-family: 'Daytona W04 Condensed Fat';
+    margin: 0;
+    display: flex;
+    align-items: center;
 }
