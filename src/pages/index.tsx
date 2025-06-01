@@ -5,6 +5,8 @@ import styles from "@/styles/Home.module.css";
 import 'bootstrap/dist/css/bootstrap.css';
 import Hbo_nav from "@/components/molecules/navbar";
 import Carousel from "@/components/molecules/Carousel";
+import { B_item } from "@/components/atoms/miniatura_mia";
+import { Movie_row } from "@/components/molecules/Movie_row";
 
 
 const geistSans = Geist({
@@ -21,8 +23,11 @@ export default function Home() {
 
   return (
     <>
+    <section>
       <Hbo_nav/>
       <Carousel/>
+    </section>
+    <Movie_row Title="SI"/>
     </>
 
   );

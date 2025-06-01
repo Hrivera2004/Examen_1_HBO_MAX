@@ -59,8 +59,11 @@ a {
   align-items: center;
   color: white;
   font-size: large;
+  font-weight: lighter;
 }
-a:active .center_vert {
+a:active .center_vert,
+a:hover .center_vert,
+a:focus .center_vert{
   text-decoration: underline;
   text-decoration-color: white;
 }
@@ -113,4 +116,8 @@ a:active .center_vert {
   justify-content: center;
   align-items: center;
   gap: 4%;
+}
+
+.cartita{
+  
 }

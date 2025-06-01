@@ -21,7 +21,6 @@ export const C_item = ({ active, Link_image, link_logo, new_or_not, age_restrict
             </div>
             <p className="p_carousel">{description}</p>
             <button className="boton_carousel_style">Ir a la {tipo_contenido}</button>
-
         </div>
     </div> 
     :<div className="carousel-item">

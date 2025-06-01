@@ -65,7 +65,6 @@ export default function Carousel() {
                     description="DOOM PATROL recrea uno de los grupos de superhéroes más queridos de DC, llamados a la acción por Cyborg, con una misión difícil de rechazar." 
                     tipo_contenido='serie'
                     Num_temporadas={4} />
-                    {/*item6*/}
                 </div>
             </div>
 
