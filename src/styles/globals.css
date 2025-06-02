@@ -118,6 +118,64 @@ a:focus .center_vert{
   gap: 4%;
 }
 
-.cartita{
-  
+#miniatura{
+  width: 15%; 
+  height: 20%;
+  overflow: hidden;
+
+  box-sizing: border-box;
+  position: relative;
+}
+
+
+maybe fix 
+a:active #rotacion_si,
+a:hover #rotacion_si,
+a:focus #rotacion_si{
+    text-decoration-color: rgb(255, 255, 255);
+}
+
+#rotacion_si {
+  position: absolute;
+  top: 1px;
+  right: 10px;
+  width: 5%;
+  height: 5%;
+  display: inline-block;
+  transform: rotate(90deg);
+  font-weight: 9031130;
+}
+
+.Adjust_miniatura {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+#label_miniatura {
+  position: absolute;
+  top: 0px;
+  left: 13px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 6px;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 100%;
+  font-weight: bolder;
+  white-space: nowrap;
+  line-height: 4vh;
+}
+
+
+.centered {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  /* Si usas Bootstrap y quieres quitar márgenes negativos de .row: */
+  margin-left: 0;
+  margin-right: 0;
 }

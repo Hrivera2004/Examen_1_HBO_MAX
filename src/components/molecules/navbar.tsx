@@ -6,7 +6,7 @@ const Hbo_nav = () => {
             <a className="navbar-brand " style={{ flex: '0 0 auto' }}>
                 <img src="https://images.cdn.prd.api.discomax.com/05b7/3d4a7e2b0215.png?h=60&f=webp" width="109.5" height="30" />
             </a>
-            <div id="navbar_center" >
+            <div id="navbar_center" className="collapse">
                 <a href="#" ><p className="center_vert"> Inicio </p> </a>
                 <a href="#" ><p className="center_vert"> Series </p></a>
                 <a href="#" ><p className="center_vert"> Peliculas </p></a>
@@ -17,7 +17,6 @@ const Hbo_nav = () => {
             <div style={{ display: 'flex', gap: '25px', alignItems: 'center', marginRight:'4%'}}>
                 <a href="#">  
                     <img src="https://images.cdn.prd.api.discomax.com/2023%2F4%2F14%2Fd1c89ec8-a4a6-4acb-bb75-d5a9eca17880.png?h=32&f=webp" width="23" height="23" alt="Icon 1" />
-                
                 </a>
                 <a href="#">
                     <img src="https://images.cdn.prd.api.discomax.com/2023%2F4%2F14%2Fd6e2e8b6-d39a-4391-916d-1079b419b60d.png?h=32&f=webp" width="23" height="23" alt="Icon 2" />

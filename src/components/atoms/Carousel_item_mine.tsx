@@ -12,7 +12,7 @@ interface Param {
 }
 export const C_item = ({ active, Link_image, link_logo, new_or_not, age_restriction, description, tipo_contenido, Num_temporadas, anio }: Param) => {
     return (active ? <div className="carousel-item active" >
-        <img src={Link_image} className="d-block w-100" alt="First slide" style={{ maxHeight: "100vh" }} />
+        <img src={Link_image} className="d-block w-100" alt="First slide" style={{ maxHeight: "105vh" }} />
         <div className="carousel-caption d-none d-md-block position-absolute text-start p-3" style={{ left: "5%", bottom: "10%", width: "30%" }}>
             <img className="img_responsive" src={link_logo} />
             <div className="Subtitle_carousel_style">
