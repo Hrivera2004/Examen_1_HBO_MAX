@@ -13,7 +13,7 @@ interface Param {
 }
 export const Movie_row = ({ id_car,Title, itemsGroup1, itemsGroup2 }: Param) => {
     return <div>
-        <h5 style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)', paddingLeft: '5%', paddingTop: '1.5%', paddingBottom: '1%', display: 'flex', alignItems: 'center' }}>{Title}</h5>
+        <h4 style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)', paddingLeft: '5%', paddingTop: '1.5%', paddingBottom: '1%', display: 'flex', alignItems: 'center' }}>{Title}</h4>
         <div id={id_car} className="carousel slide">
             <div className="carousel-inner " >
                 <div className="carousel-item active">
