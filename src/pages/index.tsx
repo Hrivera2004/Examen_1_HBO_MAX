@@ -8,7 +8,7 @@ import Carousel from "@/components/molecules/Carousel";
 import { B_item } from "@/components/atoms/miniatura_mia";
 import { Movie_row } from "@/components/molecules/Movie_row";
 import { Continue_section } from "@/components/molecules/Continue_section";
-
+import { Top10_row } from "@/components/molecules/Top10_row";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -121,6 +121,51 @@ export default function Home() {
   ];
 
 
+   const top10Group1 = [
+    {
+      Link_image:"https://images.cdn.prd.api.discomax.com/2025/04/07/3828d049-fc52-340f-aa53-c46b86298a6a.jpeg?w=1300&f=webp",
+      number: 1,
+    },
+    {
+      Link_image: "https://images.cdn.prd.api.discomax.com/2025/03/24/778d3b69-00c8-3f3a-82d2-1672fa523dbe.jpeg?w=1300&f=webp",
+      number: 2,
+    },
+    {
+      Link_image: "https://images.cdn.prd.api.discomax.com/2025/01/29/989253f0-dc84-349d-b614-f50d547d7bd7.jpeg?w=1300&f=webp",
+      number: 3,
+    },
+    {
+      Link_image: "https://images.cdn.prd.api.discomax.com/2024/08/30/89abbd7f-b5e7-347e-9dd9-39529c187c47.jpeg?w=1300&f=webp",
+      number: 4,
+    },
+    {
+      Link_image: "https://images.cdn.prd.api.discomax.com/2024/08/30/61257f87-daac-3e67-b2a4-54f4f7dd7eb1.jpeg?w=200&f=webp",
+      number: 5,
+    },
+  ];
+
+  const top10Group2 = [
+    {
+      Link_image: "https://images.cdn.prd.api.discomax.com/2025/03/31/d537701e-52c8-3c82-9338-a478b706dd5a.jpeg?w=350&f=webp",
+      number: 6,
+    },
+    {
+      Link_image: "https://images.cdn.prd.api.discomax.com/2023/10/12/a0b2a860-b906-3be4-ba75-57b9bb14017c.jpeg?w=350&f=webp",
+      number: 7,
+    },
+    {
+      Link_image: "https://images.cdn.prd.api.discomax.com/2024/11/26/bf02199d-d5a8-3af9-b2ef-9678e7506d25.jpeg?w=600&f=webp",
+      number: 8,
+    },
+    {
+      Link_image: "https://images.cdn.prd.api.discomax.com/2024/09/06/a1f7bb55-bb24-373a-84a2-12f14ecd3cc9.jpeg?w=250&f=webp",
+      number: 9,
+    },
+    {
+      Link_image: "https://images.cdn.prd.api.discomax.com/2024/08/14/68eba161-98b4-33c7-b029-aed3d7b7d928.jpeg?w=300&f=webp",
+      number: 10,
+    },
+  ];
 
 
   return (
@@ -187,6 +232,16 @@ export default function Home() {
           }
         ]}
       />
+      
+      {/* Aquí insertamos el Top 10 */}
+      <div className="mt-10">
+        <Top10_row
+          id_car="top10Carousel"
+          Title="Top 10 Películas Hoy"
+          itemsGroup1={top10Group1}
+          itemsGroup2={top10Group2}
+        />
+      </div>
 
     </>
   );

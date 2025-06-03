@@ -235,3 +235,66 @@ a:focus #rotacion_si{
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
   z-index: 2;
 }
+
+
+/* 1) Contenedor de cada “card” del Top 10 */
+.top10-card-wrapper {
+  position: relative;
+  width: 15%;
+  min-width: 180px;
+  margin-right: 5%;        /* Aumentamos un poco la separación entre tarjetas */
+}
+
+/* 2) El poster siempre ocupa todo el ancho, sin esquinas redondeadas */
+.top10-poster {
+  width: 100%;
+  height: 300px;        /* Ajusta la altura para que se parezca a tus otros carruseles (ej: 300px) */
+  object-fit: cover;
+  border-radius: 0px;   /* Quita cualquier redondeo */
+}
+
+/* 3) Número estilo “TOP 10” detrás del poster */
+.top10-number {
+  position: absolute;
+  top: 50%;
+  left: -25px;               /* Ahora el número sale 25px a la izquierda del poster */
+  transform: translateY(-50%);
+  font-family: "Daytona W04 Condensed Fat";
+  font-size: 6rem;           /* Lo hacemos más grande (6rem en lugar de 5rem) */
+  color: rgba(255, 255, 255, 0.05); /* Un poco más transparente para que se note el póster detrás */
+  pointer-events: none;
+  user-select: none;
+  z-index: 1;
+}
+
+/* 4) Tres puntos estilo menú en la esquina superior derecha */
+.top10-dots {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  color: white;
+  font-size: 1.2rem;
+  z-index: 2;           /* Por encima del número */
+}
+
+
+/* Opcional: Si quieres sombra al pasar el ratón */
+.top10-card-wrapper:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  transform: scale(1.03);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  z-index: 3;
+}
+
+/* Ajusta el tamaño de los controles para que no cubran el contenido */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+  background-size: 2rem 2rem;
+}
+
+/* Ajusta márgenes x de todo el carrusel como en tus otros rows */
+#top10Carousel .carousel-inner {
+  padding-left: 0%;
+  padding-right: 5%;
+}
