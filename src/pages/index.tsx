@@ -234,13 +234,14 @@ export default function Home() {
       />
       
       {/* Aquí insertamos el Top 10 */}
-      <div className="mt-10">
+      <div className="mt-10" style={{paddingBottom: "5px"}}>
         <Top10_row
           id_car="top10Carousel"
           Title="Top 10 Películas Hoy"
           itemsGroup1={top10Group1}
           itemsGroup2={top10Group2}
         />
+      
       </div>
 
     </>
