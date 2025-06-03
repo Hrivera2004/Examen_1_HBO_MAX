@@ -5,7 +5,7 @@ interface Param {
 }
 export const B_item = ({ Link_image, tag }: Param) => {
     return (
-        <div className="position-relative" id="miniatura" >
+        <div className="carousel_card_wrapper position-relative" id="miniatura">
             <a href="">
                 <img className="Adjust_miniatura" src={Link_image}></img> 
             </a>
@@ -14,12 +14,6 @@ export const B_item = ({ Link_image, tag }: Param) => {
                     <span>{tag}</span>
                 </div>
             }
-            <a href="#">
-                <div className="position-absolute" id="rotacion_si">
-                    ...
-                </div>
-            </a>
         </div>
     )
-
 };

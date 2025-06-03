@@ -7,6 +7,8 @@ import Hbo_nav from "@/components/molecules/navbar";
 import Carousel from "@/components/molecules/Carousel";
 import { B_item } from "@/components/atoms/miniatura_mia";
 import { Movie_row } from "@/components/molecules/Movie_row";
+import { Continue_section } from "@/components/molecules/Continue_section";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -129,19 +131,63 @@ export default function Home() {
       </section>
 
       <div><Movie_row
-      id_car="hello"
+        id_car="hello"
         Title="Destacados"
         itemsGroup1={itemsGroup1}
         itemsGroup2={itemsGroup2}
       />;
       </div>
       <div><Movie_row
-      id_car="goodbye"
+        id_car="goodbye"
         Title="Solo para ti"
         itemsGroup1={itemsGroup3}
         itemsGroup2={itemsGroup4}
       />;
       </div>
+
+      <Continue_section
+        items={[
+          {
+            Link_image: "https://images.cdn.prd.api.discomax.com/2025/05/06/1eec5f84-00a4-3f7a-83d7-50a1877ebc3c.jpeg?w=1300&f=webp",
+            title: "Robot Salvaje",
+            year: 2024,
+            age: "7+",
+            progress: 40,
+            isSerie: false
+          },
+          {
+            Link_image: "https://4kwallpapers.com/images/walls/thumbs_3t/21983.jpg",
+            title: "The Last of Us",
+            year: 2023,
+            age: "16+",
+            progress: 80,
+            isSerie: true,
+            temporada: 2,
+            episodio: 7,
+            episodeTitle: "Convergencia"
+          },
+          {
+            Link_image: "https://4kwallpapers.com/images/walls/thumbs_3t/8238.jpg",
+            title: "House of the Dragon",
+            year: 2022,
+            age: "18+",
+            progress: 60,
+            isSerie: true,
+            temporada: 1,
+            episodio: 4,
+            episodeTitle: "Sangre Real"
+          },
+          {
+            Link_image: "https://4kwallpapers.com/images/walls/thumbs_3t/22621.jpg",
+            title: "Ironheart",
+            year: 2025,
+            age: "12+",
+            progress: 30,
+            isSerie: false
+          }
+        ]}
+      />
+
     </>
   );
 }
