@@ -21,22 +21,14 @@ export const Top10_row = ({
 }: Top10RowProps) => {
   return (
     <div>
-      {/* Título “Top 10 Películas Hoy” */}
-      <h4
-        className="text-white"
-        style={{
-          backgroundColor: "rgba(0, 0, 0, 0.05)",
-          paddingLeft: "5%",
-          paddingTop: "1.5%",
-          paddingBottom: "1%",
-          display: "flex",
-          alignItems: "center",
-          fontFamily: "Daytona W04 Condensed Fat",
-          fontSize: "1.5rem",
-        }}
-      >
-        {Title}
-      </h4>
+      {/* Imagen de “Top 10 Películas Hoy” */}
+      <div style={{ paddingLeft: "0.9%", paddingTop: "0%", paddingBottom: "3%",  marginTop: "0%"  }}>
+        <img
+          src="https://images.cdn.prd.api.discomax.com/710c/603376f62c95.png"
+          alt="Top 10 Películas Hoy"
+          style={{ width: "400px", height: "auto", objectFit: "contain" }}
+        />
+      </div>
 
       <div id={id_car} className="carousel slide">
         <div className="carousel-inner">

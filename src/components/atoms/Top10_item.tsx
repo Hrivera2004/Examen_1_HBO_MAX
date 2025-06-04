@@ -16,6 +16,7 @@ export const Top10_item = ({ Link_image, number }: Top10ItemProps) => {
       />
       {/* Número gigante */}
       <span className="top10-number">{number}</span>
+      
       {/* Tres puntos de menú (igual que en tus C_item) */}
       <div className="top10-dots position-absolute">
         &bull;&bull;&bull;

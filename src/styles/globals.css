@@ -251,16 +251,38 @@ a:focus .center_vert{
 /* 3) Número estilo “TOP 10” detrás del poster */
 .top10-number {
   position: absolute;
-  top: 50%;
-  left: -25px;               /* Ahora el número sale 25px a la izquierda del poster */
+  top: 75%;
+  left: -30px;
   transform: translateY(-50%);
-  font-family: "Daytona W04 Condensed Fat";
-  font-size: 6rem;           /* Lo hacemos más grande (6rem en lugar de 5rem) */
-  color: rgba(255, 255, 255, 0.05); /* Un poco más transparente para que se note el póster detrás */
+  font-family: "Arial Black", sans-serif;
+  font-size: 6rem;
+  font-weight: 900;
+  letter-spacing: -5px;
+  
+  background: linear-gradient(
+    135deg,
+    #b6b0f5 0%,
+    #9d8df4 25%,
+    #6e5ccc 50%,
+    #4a3799 75%,
+    #2c1f66 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow:
+    0 0 8px rgba(108, 80, 180, 0.5),       /* glow suave alrededor */
+    2px 2px 2px rgba(31, 14, 59, 0.8),       /* sombra para volumen */
+    -2px -2px 2px rgba(130, 57, 190, 0.1), /* luz superior */
+    0px 4px 6px rgba(93, 37, 152, 0.7);       /* sombra inferior más intensa */
+
+  filter: drop-shadow(0 0 6px rgba(80, 60, 120, 0.4)); /* contorno externo difuso */
+  
   pointer-events: none;
   user-select: none;
   z-index: 1;
 }
+
 
 /* 4) Tres puntos estilo menú en la esquina superior derecha */
 .top10-dots {
@@ -272,8 +294,6 @@ a:focus .center_vert{
   z-index: 2;           /* Por encima del número */
 }
 
-
-/* Opcional: Si quieres sombra al pasar el ratón */
 .top10-card-wrapper:hover {
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
   transform: scale(1.03);
@@ -293,3 +313,11 @@ a:focus .center_vert{
   padding-left: 0%;
   padding-right: 5%;
 }
+
+.top10-title-img {
+  width: 250px;         /* Ajusta según diseño */
+  margin-left: 20px;    /* Opcional: separación del borde izquierdo */
+  margin-bottom: 1rem;  /* Espacio debajo */
+  display: block;
+}
+
