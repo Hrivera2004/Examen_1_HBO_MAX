@@ -15,7 +15,7 @@ export const B_item = ({ Link_image, tag }: Param) => {
                 </div>
             }
             <a href="">
-                <div className="top10-dots position-absolute rotated_text" style={{ right: "-6%" }}>
+                <div className="top10-dots position-absolute rotated_text" style={{ right: "-10%" }}>
                     &bull;&bull;&bull;
                 </div>
             </a>

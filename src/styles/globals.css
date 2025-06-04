@@ -144,7 +144,7 @@ a:focus .center_vert{
 
 #label_miniatura {
   position: absolute;
-  top: 0px;
+  top: 1%;
   left: 13px;
   display: inline-flex;
   align-items: center;
@@ -152,7 +152,7 @@ a:focus .center_vert{
   padding: 2px 6px;
   background-color: #ffffff;
   color: #000000;
-  font-size: 100%;
+  font-size: 90%;
   font-weight: bolder;
   white-space: nowrap;
   line-height: 4vh;
@@ -319,12 +319,5 @@ a:focus .center_vert{
   width: 250px;         /* Ajusta según diseño */
   margin-left: 20px;    /* Opcional: separación del borde izquierdo */
   margin-bottom: 1rem;  /* Espacio debajo */
-  display: block;
-}
-
-.carousel-image {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
   display: block;
 }
