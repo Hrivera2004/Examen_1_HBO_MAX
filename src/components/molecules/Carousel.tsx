@@ -14,7 +14,7 @@ export default function Carousel() {
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5" />
             </div>
             <div className="d-flex justify-content-center">
-                <div className="carousel-inner">
+                <div className="carousel-image">
                     {/*item1*/}
                     <C_item active={true} 
                     link_logo=

@@ -180,14 +180,14 @@ export default function Home() {
         Title="Destacados"
         itemsGroup1={itemsGroup1}
         itemsGroup2={itemsGroup2}
-      />;
+      />
       </div>
       <div><Movie_row
         id_car="goodbye"
         Title="Solo para ti"
         itemsGroup1={itemsGroup3}
         itemsGroup2={itemsGroup4}
-      />;
+      />
       </div>
 
       <Continue_section
